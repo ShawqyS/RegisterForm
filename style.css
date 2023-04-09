@@ -1,0 +1,36 @@
+.form-input {
+    margin-bottom: 1rem;
+  }
+  
+  .form-input label,
+  .form-input input,
+  .form-input select {
+    display: block;
+  }
+  
+  .error-message {
+    color: red;
+    margin-bottom: 1rem;
+  }
+  
+  .success-message {
+    color: green;
+    margin-bottom: 1rem;
+    display: none;
+  }
+  
+  .payment-method {
+    background-color: blue;
+    color: aliceblue;
+    margin-bottom: 1rem;
+    display: none;
+  }
+
+  .cont {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .aler {
+    margin-left: 20px; /* Pas dit aan naar de gewenste afstand tussen formulier en alerts */
+  }

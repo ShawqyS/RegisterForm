@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Registratieformulier</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="cont">
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h2 class="text-center mb-4">Registreer</h2>
+        <form id="registratieFormulier">
+          <div class="form-group">
+            <label for="firstNameInput">Voornaam</label>
+            <input type="text" class="form-control" id="firstNameInput" name="voornaam" placeholder="Voer uw voornaam in" required>
+          </div>
+          <div class="form-group">
+            <label for="lastNameInput">Achternaam</label>
+            <input type="text" class="form-control" id="lastNameInput" name="achternaam" placeholder="Voer uw achternaam in" required>
+          </div>
+
+          <div class="form-group">
+            <label for="usernameInput">Gebruikersnaam</label>
+            <input type="text" class="form-control" id="usernameInput" name="achternaam" placeholder="Voer uw achternaam in" required>
+          </div>
+
+          <div class="form-group">
+            <label for="emailInput">E-mailadres</label>
+            <input type="email" class="form-control" id="emailInput" name="email" placeholder="Voer uw e-mailadres in" required>
+          </div>
+          <div class="form-group">
+            <label for="passwordInput">Wachtwoord</label>
+            <input type="password" class="form-control" id="passwordInput" name="wachtwoord" placeholder="Voer uw wachtwoord in" required>
+          </div>
+          <div class="form-group">
+            <label for="confirmPasswordInput">Wachtwoord</label>
+            <input type="password" class="form-control" id="confirmPasswordInput" name="wachtwoord" placeholder="Voer uw nogmaals wachtwoord in" required>
+          </div>
+          <div class="form-group">
+            <label for="addressInput">Adres</label>
+            <input type="text" class="form-control" id="addressInput" name="wachtwoord" placeholder="Voer uw wachtwoord in" required>
+          </div>
+          <div class="form-group">
+            <label for="countryInput">Land</label>
+            <select class="form-control" id="countryInput" name="land" required>
+              <option value="">Kies een land</option>
+              <option value="Nederland">Nederland</option>
+              <option value="België">België</option>
+              <option value="Duitsland">Duitsland</option>
+              <option value="Frankrijk">Frankrijk</option>
+            </select>
+          </div>          
+          <div class="form-group">
+            <label for="provinceInput">Provincie</label>
+            <select class="form-control" id="provinceInput" name="provinceInput" required>
+              <option value="">Kies een provincie</option>
+              <option value="Groningen">Antwerpen</option>
+              <option value="Friesland">Parijs</option>
+              <option value="Drenthe">Brussel</option>
+              <option value="Overijssel">Munchen</option>
+              <option value="Flevoland">Luik</option>
+              <option value="Gelderland">Dusseldorf</option>
+              <option value="Utrecht">Utrecht</option>
+              <option value="Noord-Holland">Noord-Holland</option>
+              <option value="Zuid-Holland">Zuid-Holland</option>
+              <option value="Zeeland">Zeeland</option>
+              <option value="Noord-Brabant">Noord-Brabant</option>
+              <option value="Limburg">Limburg</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="postalCodeInput">Postcode</label>
+            <input type="text" class="form-control" id="postalCodeInput" name="wachtwoord" placeholder="Voer uw wachtwoord in" required>
+          </div>
+          <div class="form-group">
+            <label for="paymentMethodInput">Betalingswijze:</label><br>
+            <input type="radio" id="creditCardInput" name="paymentMethod" value="creditCard">
+            <label for="creditCardInput">Creditcard</label><br>
+            <input type="radio" id="bankTransferInput" name="paymentMethod" value="bankTransfer">
+            <label for="bankTransferInput">Bankoverschrijving</label><br>
+            <input type="radio" id="paypalInput" name="paymentMethod" value="paypal">
+            <label for="paypalInput">PayPal</label><br>
+          </div>
+          <div class="form-group">
+            <label for="termsAndConditionsInput">Ik ga akkoord met de algemene voorwaarden</label>
+            <input type="checkbox" id="termsAndConditionsInput" name="termsAndConditions">
+          </div>
+          <button type="button" id="registerButton" class="btn btn-primary">Registreren</button>
+          
+        </form>
+        <div class="aler">
+          <div id="errorList" class="mt-4 alert alert-danger" style="display: none;"></div>
+
+          <div id="successAlert" class="mt-4 alert alert-success" style="display: none;">
+            <h4>Success</h4><br>
+            <p>Je bent geregistreerd</p>
+          </div>
+  
+          <div id="paymentAlert" class="mt-4 alert alert-info" style="display: none;">
+          <h4>Betalingswijze</h4> <br>
+          <p>Je Betalingswijze:</p>
+          </div>
+        </div>
+        </div>
+        
+
+        <script src="script.js"></script>
+        
+        
+      </div>
+    </div>
+  </div>
+</body>
+</html>
