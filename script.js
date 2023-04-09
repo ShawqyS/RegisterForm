@@ -1,3 +1,5 @@
+// https://github.com/ShawqyS/RegisterForm
+// https://shawqy-tm.com/
 document.getElementById("registerButton").addEventListener("click", function validateForm() {
 
     
